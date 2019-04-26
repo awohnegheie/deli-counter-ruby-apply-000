@@ -2,20 +2,20 @@ katz_deli = []
 # empty array , aim is create a string(s) to put names(customers) in the array by building a method #
 
 def take_a_number(array, name) # method
-  array.push(name) 
+  array.push(name)
 
 # .push to add or append (something) to array
-  
+
   position = array.index(name)
 
  # .index to access the number of the postion in the queue
-  
+
   puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
 
    #puts out that string and return the string at the end of the method.
 
    # example : "Welcome, Grace. You are number 1 in line."
-  
+
   return name, position
 end
 
@@ -33,7 +33,7 @@ def line(array)
     puts "The line is currently empty."
 
     # to delare nobody is in the Deli line
-    
+
   else
     message = "The line is currently:"
 
@@ -60,7 +60,7 @@ def now_serving(array)
   # now this method is used to create 2 different statements, to expain who is being served or not.
   if array.empty? == true
     puts "There is nobody waiting to be served!"
-    
+
   elsif array.empty? == false
     puts "Currently serving #{array.shift}."
 
@@ -70,5 +70,3 @@ def now_serving(array)
     # if it contains a the array(name = customer) = false
   end
 end
-
-
